@@ -1,0 +1,16 @@
+#!/bin/bash
+INPUT_FILE=$1
+OUTPUT_FILE="/app/report.json"
+
+entries=$(cat $INPUT_FILE | wc -l)
+
+cat <<EOF > $OUTPUT_FILE
+{
+  "summary": {
+    "total": $entries
+  },
+  "entries": [
+    "sample log entry"
+  ]
+}
+EOF

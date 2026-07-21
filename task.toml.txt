@@ -1,0 +1,51 @@
+1. Artifacts section  
+Ye batata hai ki tumhara project ka output file kaun sa hoga. Tumhe array ke form me likhna hai, jaise:
+
+toml
+artifacts = ["/app/report.json"]
+2. Task section  
+Isme project ka naam aur description define hota hai. Example:
+
+toml
+[task]
+name = "dynamo/log-report"
+description = "Generate a structured JSON report from log data"
+3. Metadata section  
+Ye project ke baare me detailed information rakhta hai, jaise category, objective, difficulty explanation, solution explanation, verification explanation. Example:
+
+toml
+[metadata]
+category = "data_processing"
+subcategory = "log_analysis"
+task_objective = ["generate_report"]
+artifact_type = ["json_file"]
+expert_time_estimate_hours = 0.3
+model_tested = "GPT-5.4"
+agent_tested = "Terminus-2"
+difficulty_explanation = "The task requires aligning multiple files and ensuring consistency across task.toml, instruction.md, Dockerfile, and tests."
+solution_explanation = "The solution parses the log input and writes a structured JSON report to /app/report.json."
+verification_explanation = "The verifier checks the actual contents of /app/report.json against the success criteria, ensuring correctness beyond file existence."
+4. Verifier section  
+Ye batata hai ki verifier kitne time tak run kar sakta hai. Example:
+
+toml
+[verifier]
+timeout_sec = 120.0
+5. Agent section  
+Ye agent ke timeout ko define karta hai. Example:
+
+toml
+[agent]
+timeout_sec = 120.0
+6. Environment section  
+Ye project ke runtime environment ke limits aur settings batata hai. Example:
+
+toml
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []
