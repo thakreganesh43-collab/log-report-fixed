@@ -1,10 +1,22 @@
-Project Description  
-Ye project ek structured JSON report generate karta hai jo log data ko analyze karke summary aur entries ke form me output deta hai. Iska objective hai raw log ko process karke ek clear aur machine‑readable report banani jo further analysis ke liye use ho sake.
+Project Description
 
-Installation Steps  
-Project ko run karne ke liye pehle dependencies install karni hongi.
+This project generates a structured JSON report by analyzing log data and producing summaries and individual entries. The main objective is to process raw log files and convert them into a clear, machine-readable report for further analysis.
 
-Repository clone karo:
+Installation Steps
+
+Follow these steps to set up and run the project.
+
+1. Clone the Repository
+
+git clone https://github.com/thakreganesh43-collab/log-report-fixed.git
+
+2. Navigate to the Project Directory
+
+cd log-report-fixed
+
+3. Install Dependencies
+
+Install the required dependencies using the appropriate package manager for the project.
 
 bash
 git clone https://github.com/thakreganesh43-collab/log-report-fixed.git
